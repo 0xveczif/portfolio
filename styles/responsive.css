@@ -1,0 +1,642 @@
+
+/* Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem; /* Reduced from 2rem */
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem; /* Reduced from 3rem */
+    }
+    
+    .hero-avatar {
+        width: 220px; /* Reduced from 250px */
+        height: 220px;
+        font-size: 4.5rem; /* Reduced from 5rem */
+    }
+    
+    .section-title {
+        font-size: 2rem; /* Reduced from 2.5rem */
+    }
+    
+    .section {
+        padding: 3rem 0; /* Reduced from default */
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Reduced */
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Reduced */
+    }
+    
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bug-hunting-grid,
+    .hall-of-fame-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: row !important;
+        padding-left: 60px;
+        margin-bottom: 2rem; /* Reduced spacing */
+    }
+    
+    .timeline-year {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        text-align: center;
+        font-size: 0.85rem; /* Reduced */
+    }
+    
+    .timeline-content {
+        margin: 0;
+        margin-left: 1rem;
+        padding: 1.5rem; /* Reduced */
+    }
+    
+    /* Hamburger menu for tablet - half screen width */
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -50%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(15, 15, 35, 0.98);
+        backdrop-filter: blur(15px);
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu .nav-link {
+        padding: 0.8rem; /* Reduced from 1rem */
+        display: block;
+        font-size: 1rem; /* Reduced from 1.1rem */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(15, 15, 35, 0.98);
+        backdrop-filter: blur(15px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 1.5rem 0; /* Reduced from 2rem */
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu .nav-link {
+        padding: 0.8rem; /* Reduced from 1rem */
+        display: block;
+        font-size: 1rem; /* Reduced from 1.1rem */
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .nav-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .hero {
+        min-height: 90vh;
+        padding-top: 80px; /* Reduced from 100px */
+    }
+    
+    .hero-title {
+        font-size: 2rem; /* Reduced from 2.5rem */
+    }
+    
+    .hero-name {
+        font-size: 2rem; /* Reduced from 2.5rem */
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem; /* Reduced from 1.5rem */
+    }
+    
+    .hero-description {
+        font-size: 0.95rem; /* Reduced from 1rem */
+    }
+    
+    .hero-avatar {
+        width: 180px; /* Reduced from 200px */
+        height: 180px;
+        font-size: 3.5rem; /* Reduced from 4rem */
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem; /* Reduced from 1rem */
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 220px; /* Reduced from 250px */
+        justify-content: center;
+        padding: 0.8rem 1.5rem; /* Reduced */
+        font-size: 0.85rem; /* Reduced */
+    }
+    
+    .section {
+        padding: 3rem 0; /* Reduced from 4rem */
+    }
+    
+    .section-title {
+        font-size: 1.8rem; /* Reduced from 2rem */
+        margin-bottom: 1.8rem; /* Reduced from 2rem */
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem; /* Reduced from 1.5rem */
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Reduced from 100px */
+        gap: 0.8rem; /* Reduced from 1rem */
+    }
+    
+    .tool-item {
+        padding: 0.8rem; /* Reduced from 1rem */
+    }
+    
+    .tool-item i {
+        font-size: 1.3rem; /* Reduced from 1.5rem */
+    }
+    
+    .tool-item span {
+        font-size: 0.7rem; /* Reduced from 0.8rem */
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem; /* Reduced */
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem; /* Reduced */
+    }
+    
+    .bug-hunting-grid,
+    .hall-of-fame-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem; /* Reduced */
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline::before {
+        left: 10px;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+        margin-bottom: 1.8rem; /* Reduced */
+    }
+    
+    .timeline-year {
+        position: absolute;
+        left: -30px;
+        top: 10px;
+        width: 80px;
+        font-size: 0.75rem; /* Reduced from 0.8rem */
+        padding: 0.2rem; /* Reduced */
+        background: rgba(15, 15, 35, 0.9);
+        border: 1px solid rgba(0, 212, 255, 0.5);
+        z-index: 10;
+    }
+    
+    .timeline-content {
+        padding: 1.3rem; /* Reduced from 1.5rem */
+        margin-left: 0.5rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.1rem; /* Reduced from 1.2rem */
+    }
+    
+    .timeline-content h4 {
+        font-size: 0.95rem; /* Reduced from 1rem */
+    }
+    
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem; /* Reduced */
+    }
+    
+    .contact-info {
+        gap: 1.2rem; /* Reduced from 1.5rem */
+    }
+    
+    .contact-item {
+        font-size: 0.9rem; /* Reduced from 1rem */
+    }
+    
+    .testimonial-controls {
+        gap: 0.8rem; /* Reduced from 1rem */
+    }
+    
+    .testimonial-btn {
+        width: 35px; /* Reduced from 40px */
+        height: 35px;
+    }
+    
+    .testimonial-slide {
+        padding: 1.5rem 0.8rem; /* Reduced from 2rem 1rem */
+        min-height: 130px; /* Reduced from 150px */
+    }
+    
+    .testimonial-content p {
+        font-size: 0.95rem; /* Reduced from 1rem */
+    }
+    
+    .reports-table {
+        font-size: 0.85rem; /* Reduced from 0.9rem */
+    }
+    
+    .reports-table th,
+    .reports-table td {
+        padding: 0.6rem 0.4rem; /* Reduced from 0.75rem 0.5rem */
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        gap: 0.8rem; /* Reduced from 1rem */
+        align-items: stretch;
+    }
+    
+    .contact-btn {
+        min-width: auto;
+        width: 100%;
+        max-width: 250px; /* Reduced from 280px */
+        margin: 0 auto;
+        padding: 0.7rem 1.2rem; /* Reduced */
+        font-size: 0.85rem; /* Reduced */
+    }
+    
+    .contact-btn-small {
+        padding: 0.6rem 1rem; /* Even smaller on mobile */
+        font-size: 0.8rem;
+    }
+    
+    .contact-btn i {
+        font-size: 1rem; /* Reduced from 1.2rem */
+    }
+    
+    .back-to-portfolio {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .back-btn {
+        padding: 0.45rem 0.8rem; /* Reduced from 0.5rem 1rem */
+        font-size: 0.8rem; /* Reduced from 0.9rem */
+    }
+    
+    .page-header {
+        padding: 4rem 0 2.5rem; /* Reduced from 5rem 0 3rem */
+    }
+    
+    .page-title {
+        font-size: 2rem; /* Reduced from 2.5rem */
+    }
+    
+    .page-subtitle {
+        font-size: 0.95rem; /* Reduced from 1rem */
+        padding: 0 1rem;
+    }
+}
+
+/* Desktop Styles - Hamburger Menu Fix */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -50%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(15, 15, 35, 0.98);
+        backdrop-filter: blur(15px);
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 1.5rem 0; /* Reduced from 2rem */
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu .nav-link {
+        padding: 0.8rem; /* Reduced from 1rem */
+        display: block;
+        font-size: 1rem; /* Reduced from 1.1rem */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-menu .nav-link:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1201px) {
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+        backdrop-filter: none;
+    }
+    
+    .nav-menu .nav-link {
+        padding: 0.5rem 0;
+        display: inline-block;
+        font-size: 0.9rem; /* Reduced from 1rem */
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem; /* Reduced from 2rem */
+    }
+    
+    .hero-name {
+        font-size: 1.8rem; /* Reduced from 2rem */
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem; /* Reduced from 1.2rem */
+    }
+    
+    .hero-avatar {
+        width: 140px; /* Reduced from 150px */
+        height: 140px;
+        font-size: 2.8rem; /* Reduced from 3rem */
+    }
+    
+    .section-title {
+        font-size: 1.6rem; /* Reduced from 1.8rem */
+    }
+    
+    .section {
+        padding: 2.5rem 0; /* Reduced */
+    }
+    
+    .skill-card,
+    .project-card,
+    .cert-card,
+    .achievement-card,
+    .blog-card,
+    .research-card,
+    .bug-card,
+    .hall-card {
+        padding: 1.2rem; /* Reduced from 1.5rem */
+    }
+    
+    .timeline-content {
+        padding: 0.8rem; /* Reduced from 1rem */
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem; /* Reduced */
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px; /* Reduced from 45px */
+        height: 40px;
+        font-size: 1rem; /* Reduced */
+    }
+    
+    .testimonial-slide {
+        padding: 1.2rem 0.8rem; /* Reduced from 1.5rem 1rem */
+        min-height: 120px; /* Reduced */
+    }
+    
+    .testimonial-content p {
+        font-size: 0.9rem; /* Reduced */
+    }
+    
+    .reports-table {
+        font-size: 0.75rem; /* Reduced from 0.8rem */
+    }
+    
+    .reports-table th,
+    .reports-table td {
+        padding: 0.4rem 0.2rem; /* Reduced from 0.5rem 0.25rem */
+    }
+    
+    .company-info {
+        flex-direction: column;
+        gap: 0.2rem; /* Reduced from 0.25rem */
+        align-items: flex-start;
+    }
+    
+    .contact-buttons {
+        gap: 0.6rem; /* Reduced from 0.75rem */
+    }
+    
+    .contact-btn {
+        padding: 0.6rem 1.2rem; /* Reduced from 0.75rem 1.5rem */
+        font-size: 0.8rem; /* Reduced from 0.9rem */
+        max-width: 220px; /* Reduced */
+    }
+    
+    .contact-btn-small {
+        padding: 0.5rem 0.9rem; /* Even smaller */
+        font-size: 0.75rem;
+    }
+    
+    .contact-btn i {
+        font-size: 0.9rem; /* Reduced from 1rem */
+    }
+    
+    .back-btn {
+        padding: 0.4rem 0.6rem; /* Reduced from 0.5rem 0.75rem */
+        font-size: 0.75rem; /* Reduced from 0.8rem */
+    }
+    
+    .page-title {
+        font-size: 1.8rem; /* Reduced from 2rem */
+    }
+    
+    .nav-menu {
+        width: 100%;
+        padding: 1.2rem 0; /* Reduced */
+    }
+    
+    .nav-menu .nav-link {
+        padding: 0.7rem; /* Reduced */
+        font-size: 0.9rem; /* Reduced */
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 70px 0 1.5rem; /* Reduced */
+    }
+    
+    .hero-container {
+        gap: 0.8rem; /* Reduced from 1rem */
+    }
+    
+    .hero-avatar {
+        width: 100px; /* Reduced from 120px */
+        height: 100px;
+        font-size: 2.2rem; /* Reduced from 2.5rem */
+    }
+    
+    .section {
+        padding: 2.5rem 0; /* Reduced from 3rem */
+    }
+    
+    .nav-menu {
+        height: calc(100vh - 70px);
+        padding: 1rem 0; /* Reduced */
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-avatar {
+        box-shadow: 0 0 40px rgba(0, 212, 255, 0.3); /* Reduced from 50px */
+    }
+    
+    .skill-card:hover,
+    .project-card:hover,
+    .cert-card:hover,
+    .achievement-card:hover,
+    .bug-card:hover,
+    .hall-card:hover {
+        box-shadow: 0 12px 35px rgba(0, 212, 255, 0.25); /* Reduced from 15px 40px */
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-avatar {
+        animation: none;
+    }
+    
+    .glow-effect {
+        animation: none;
+        text-shadow: 0 0 8px rgba(0, 212, 255, 0.5); /* Reduced from 10px */
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .back-to-top,
+    .testimonial-controls {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12px; /* Smaller print font */
+    }
+    
+    .section {
+        page-break-inside: avoid;
+        padding: 0.8rem 0; /* Reduced from 1rem */
+    }
+    
+    .hero-title,
+    .section-title {
+        color: black !important;
+        font-size: 1.5rem !important; /* Reduced for print */
+    }
+}

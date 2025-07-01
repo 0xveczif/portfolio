@@ -1,0 +1,17 @@
+
+{
+  "testimonials": [
+    {
+      "text": "Good reports.",
+      "author": "Project Manager"
+    },
+    {
+      "text": "Working with Ved on our red team exercises was an excellent experience. His knowledge of current attack vectors and methodologies is impressive, and his professional approach to security research is commendable.",
+      "author": "Project Manager"
+    },
+    {
+      "text": "Ved's contributions to our security team have been outstanding. His ability to identify complex vulnerabilities and provide actionable remediation steps has significantly improved our security posture.",
+      "author": "Project Manager "
+    }
+  ]
+}

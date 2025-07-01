@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ved Prakash</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Ved Prakash</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a><!--
+                <a href="#about" class="nav-link">About</a>-->
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#bug-hunting" class="nav-link">Bug Hunting</a><!--
+                <a href="#hall-of-fame" class="nav-link">Hall of Fame</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>-->
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-name">Ved Prakash</span>
+                    <br>
+                    <span class="hero-subtitle">Red Teamer & Security Researcher</span>
+                </h1>
+                <p class="hero-description">
+                    Specialized in vulnerability assessment, bug hunting, penetration testing, providing trainings and red team operations. Passionate about discovering security flaws and protecting digital assets.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/abc/cv" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        My CV  
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar hero-hacker">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionate cybersecurity professional with extensive experience in red teaming, penetration testing, vulnerability assessment, training, and security research. Committed to protecting digital assets and advancing cybersecurity practices through continuous learning, hands-on experience, knowledge sharing through training programs and playing CTFs.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Experience</h2>
+            <div class="timeline" id="experience-timeline">
+                <!-- Experience will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Certifications</h2>
+            <div class="certifications-grid" style="justify-content: center;">
+                <div class="cert-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>C|EH</h3>
+                    <p>Certified Ethical Hacker</p>
+                    <p class="cert-provider">Cybersapiens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Penetration Testing</h3>
+                    <p>Web application, Mobile, API and Network security testing</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bug"></i>
+                    <h3>Bug Hunting</h3>
+                    <p>Vulnerability research and responsible disclosure</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Threat Hunting</h3>
+                    <p>Proactive threat detection and analysis</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Security</h3>
+                    <p>Cloud infrastructure security assessment</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Security</h3>
+                    <p>Network penetration testing and analysis</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Social Engineering</h3>
+                    <p>Human factor security assessment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology & Tools Section -->
+    <section id="tools" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Technology & Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-bug"></i>
+                    <span>Burp Suite</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-terminal"></i>
+                    <span>Metasploit</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-linux"></i>
+                    <span>Kali Linux</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-user-secret"></i>
+                    <span>Red Teaming</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-robot"></i>
+                    <span>AI</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Postman</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Nmap</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-tools"></i>
+                    <span>BEEF Framework</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-key"></i>
+                    <span>Lazagne</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-server"></i>
+                    <span>ServiceNow</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-gitlab"></i>
+                    <span>GitLab</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-search"></i>
+                    <span>Wireshark</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bug Hunting Section -->
+    <section id="bug-hunting" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Bug Hunting Reports</h2>
+            <div class="bug-hunting-grid">
+                <div class="bug-card">
+                    <h3>VDP Programs</h3>
+                    <p>Cybersapiens</p>
+                    <div class="bug-links">
+                   <!---<a href="https://xyz.com/report/nv" target="_blank" class="bug-link"> 
+                            <i class="fas fa-external-link-alt"></i>
+                            Read More
+                        </a>   -->
+                    </div>
+                </div>
+                <div class="bug-card">
+                    <h3>CTF</h3>
+                    <p>THM, picoctf</p>
+                </div>
+                <div class="bug-card">
+                    <h3>Vulnerabilities</h3>
+                    <p>Working on them</p>
+                </div><!--
+                <div class="bug-card show-all" onclick="location.href='bug-hunting.html'">
+                    <h3>Show All</h3>
+                    <p>View complete list</p>
+                    <i class="fas fa-arrow-right"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hall of Fame Section --><!--
+    <section id="hall-of-fame" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Hall of Fame</h2>
+            <div class="hall-of-fame-grid">
+                <div class="hall-card" onclick="window.open('https://abc.com/hof/abc', '_blank')">
+                    <i class="fas fa-rocket"></i>
+                    <span>NASA</span>
+                </div>
+                <div class="hall-card" onclick="window.open('https://abc.com/hof/abc', '_blank')">
+                    <i class="fab fa-apple"></i>
+                    <span>Apple</span>
+                </div>
+                <div class="hall-card">
+                    <i class="fas fa-clock"></i>
+                    <span>Coming Soon</span>
+                </div>
+                <div class="hall-card">
+                    <i class="fas fa-clock"></i>
+                    <span>Coming Soon</span>
+                </div>
+                <div class="hall-card">
+                    <i class="fas fa-clock"></i>
+                    <span>Coming Soon</span>
+                </div>
+                <div class="hall-card show-all" onclick="location.href='hall-of-fame.html'">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Show All</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Blog Section --><!--
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">📝 Blog</h2>
+            <div class="blog-grid" id="blog-grid">-->
+                <!-- Blog will be loaded from JSON --><!--
+                <div class="blog-card show-all" onclick="location.href='blog.html'">
+                    <h3>Show All</h3>
+                    <p>View all blog posts</p>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Research Section --><!--
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">📚 Research & Publications</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Security Research Papers</h3>
+                    <p>Published research on emerging threats and security methodologies.</p>
+                    <div class="research-links">
+                        <a href="https://xyz.com/abc/nv" target="_blank" class="research-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Achievements Section --><!--
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Achievements</h2>
+            <div class="achievements-content">
+                <div class="achievement-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Coming Soon</h3>
+                    <p>More achievements and recognitions will be added here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Testimonials</h2>
+            <p class="testimonials-subtitle">What clients and colleagues say about my work</p>
+            <div class="testimonials-container">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <!-- Testimonials will be loaded from JSON -->
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev-btn" onclick="changeTestimonial(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonial-dots">
+                        <!-- Dots will be generated dynamically -->
+                    </div>
+                    <button class="testimonial-btn next-btn" onclick="changeTestimonial(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title glow-effect">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-buttons">
+                    <a href="https://www.linkedin.com/in/vedpvapt" target="_blank" class="contact-btn contact-btn-small linkedin-btn">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/0xveczif/python_projects" target="_blank" class="contact-btn contact-btn-small github-btn">
+                        <i class="fab fa-github"></i>
+                        <span>My GitHub Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ved Prakash - Cybersecurity Professional Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

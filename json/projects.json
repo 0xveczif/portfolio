@@ -1,0 +1,33 @@
+
+{
+  "projects": [
+    {
+      "name": "Website Vulnerability Scanner",
+      "type": "Automated Security Testing Tool",
+      "description": "Built a custom vulnerability scanner to automatically detect security flaws in web applications.",
+      "icon": "fas fa-search",
+      "technologies": ["Python", "Security", "Automation", "Web Security"]
+    },
+    {
+      "name": "Keylogger",
+      "type": "Keystroke Monitoring Tool",
+      "description": "Developed a tool that captures and logs keystrokes from a target system silently.",
+      "icon": "fas fa-keyboard",
+      "technologies": ["Python", "System Security", "Monitoring"]
+    },
+    {
+      "name": "Reverse Backdoor & Listener",
+      "type": "Remote Access Tool",
+      "description": "Demonstrated attacker remote access via a custom-built reverse backdoor and listener setup.",
+      "icon": "fas fa-door-open",
+      "technologies": ["Network Security", "Penetration Testing", "Python"]
+    },
+    {
+      "name": "Malicious File Replacement",
+      "type": "Network Spoofing Project",
+      "description": "Created a project to intercept and replace files downloaded by a target user on a network.",
+      "icon": "fas fa-exchange-alt",
+      "technologies": ["Network Security", "Spoofing", "Man-in-the-Middle"]
+    }
+  ]
+}

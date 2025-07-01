@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ved Prakash</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Back to Portfolio Button -->
+    <div class="back-to-portfolio">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">📝 Blog</h1>
+            <p class="page-subtitle">Security insights, tutorials, and research findings</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid" id="full-blog-grid">
+                <!-- Blog posts will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ved Prakash - Cybersecurity Professional Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // Load all blog posts
+        document.addEventListener('DOMContentLoaded', function() {
+            loadFullBlogPosts();
+        });
+
+        function loadFullBlogPosts() {
+            fetch('json/blog.json')
+                .then(response => response.json())
+                .then(data => {
+                    const blogGrid = document.getElementById('full-blog-grid');
+                    blogGrid.innerHTML = '';
+                    
+                    data.blog.forEach(post => {
+                        const blogCard = document.createElement('div');
+                        blogCard.className = 'blog-card';
+                        blogCard.innerHTML = `
+                            <h3>${post.title}</h3>
+                            <p>${post.description}</p>
+                            <div class="blog-tags">
+                                ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                            <div class="blog-links">
+                                <a href="${post.link}" target="_blank" class="blog-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Read More
+                                </a>
+                            </div>
+                        `;
+                        blogGrid.appendChild(blogCard);
+                    });
+                })
+                .catch(error => console.error('Error loading blog posts:', error));
+        }
+    </script>
+</body>
+</html>

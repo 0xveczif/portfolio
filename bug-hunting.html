@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Hunting Reports - Ved Prakash</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Back to Portfolio Button -->
+    <div class="back-to-portfolio">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title glow-effect">Bug Hunting Reports</h1>
+            <p class="page-subtitle">Detailed vulnerability research and responsible disclosure reports</p>
+        </div>
+    </header>
+
+    <!-- Reports Section -->
+    <section class="reports-section">
+        <div class="container">
+            <div class="reports-table-container">
+                <table class="reports-table">
+                    <thead>
+                        <tr>
+                            <th>Report Title</th>
+                            <th>Company</th>
+                            <th>Vulnerability Type</th>
+                            <th>Severity</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CSRF Vulnerability in portal</td>
+                            <td class="company-info">
+                                <span class="company-name">Company ABC</span>
+                                <span class="company-domain">portal.abc.com</span>
+                            </td>
+                            <td><span class="vuln-type csrf">CSRF</span></td>
+                            <td><span class="severity medium">Medium</span></td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td>2024-01-15</td>
+                            <td>
+                                <a href="https://xyz.com/report/nv" target="_blank" class="report-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Report
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SQL Injection in Authentication</td>
+                            <td class="company-info">
+                                <span class="company-name">TechCorp</span>
+                                <span class="company-domain">auth.techcorp.com</span>
+                            </td>
+                            <td><span class="vuln-type sqli">SQL Injection</span></td>
+                            <td><span class="severity high">High</span></td>
+                            <td><span class="status in-progress">In Progress</span></td>
+                            <td>2024-02-10</td>
+                            <td>
+                                <span class="report-link private">
+                                    <i class="fas fa-lock"></i>
+                                    Private
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>XSS in User Profile</td>
+                            <td class="company-info">
+                                <span class="company-name">WebApp Inc</span>
+                                <span class="company-domain">profile.webapp.com</span>
+                            </td>
+                            <td><span class="vuln-type xss">XSS</span></td>
+                            <td><span class="severity medium">Medium</span></td>
+                            <td><span class="status pending">Pending Review</span></td>
+                            <td>2024-03-05</td>
+                            <td>
+                                <span class="report-link private">
+                                    <i class="fas fa-clock"></i>
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Directory Traversal</td>
+                            <td class="company-info">
+                                <span class="company-name">FileServer Co</span>
+                                <span class="company-domain">files.company.com</span>
+                            </td>
+                            <td><span class="vuln-type directory">Directory Traversal</span></td>
+                            <td><span class="severity high">High</span></td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td>2024-01-28</td>
+                            <td>
+                                <a href="#" class="report-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Report
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Privilege Escalation</td>
+                            <td class="company-info">
+                                <span class="company-name">Enterprise Systems</span>
+                                <span class="company-domain">admin.enterprise.com</span>
+                            </td>
+                            <td><span class="vuln-type privilege">Privilege Escalation</span></td>
+                            <td><span class="severity critical">Critical</span></td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td>2023-12-20</td>
+                            <td>
+                                <a href="#" class="report-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Report
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ved Prakash - Cybersecurity Professional Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

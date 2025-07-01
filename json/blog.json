@@ -1,0 +1,29 @@
+
+{
+  "blog": [
+    {
+      "title": "Web Application Security Best Practices",
+      "description": "Comprehensive guide to securing web applications against common vulnerabilities.",
+      "tags": ["Security", "Web", "OWASP"],
+      "link": "https://xyz.com/abc/nv"
+    },
+    {
+      "title": "Red Team Tactics and Techniques",
+      "description": "Advanced techniques used in red team operations and penetration testing.",
+      "tags": ["Red Team", "Penetration Testing", "Security"],
+      "link": "https://xyz.com/abc/nv"
+    },
+    {
+      "title": "API Security Testing Methodology",
+      "description": "Step-by-step approach to testing API security and identifying vulnerabilities.",
+      "tags": ["API", "Security", "Testing"],
+      "link": "https://xyz.com/abc/nv"
+    },
+    {
+      "title": "SOC Operations and Incident Response",
+      "description": "Best practices for security operations center management and incident response.",
+      "tags": ["SOC", "Incident Response", "Security"],
+      "link": "https://xyz.com/abc/nv"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "experience": [
+    {
+      "year": "2024",
+      "title": "Cybersecurity Intern",
+      "company": "Cybersapiens",
+      "department": "Vulnerability Assessment and Penetration Testing",
+      "description": "Gained hands-on experience in penetration testing, security auditing, and vulnerability research. Contributed to security assessments and documentation.",
+      "responsibilities": [
+        "Actively participated in red teaming exercises to identify security flaws in networks and applications",
+        "Reported findings to stakeholders and helped prioritize remediation"
+      ]
+    },
+    {
+      "year": "2021 - 2024",
+      "title": "Security Analyst",
+      "company": "TCS (Tata Consultancy Services)",
+      "department": "Security Operations Center (SOC) & Vulnerability Management",
+      "description": "Led security assessments, vulnerability testing, and incident response activities. Implemented security protocols and conducted threat analysis for enterprise clients.",
+      "responsibilities": [
+        "Monitored security alerts and incidents as part of the SOC team",
+        "Performed vulnerability assessments and identified security weaknesses in enterprise systems",
+        "Reported vulnerabilities and coordinated with teams for remediation"
+      ]
+    }
+  ]
+}
